@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contato</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a class="logo" href="index.html">K.E.M</a></li>
+            <li><a class="cabecalho" href="index.html">Home</a></li>
+            <li><a class="cabecalho" href="noticias.html">Notícias</a></li>
+            <li><a class="cabecalho" href="galeria.html">Galeria</a></li>
+            <li><a class="cabecalho" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <h1 class="contato">Formulário de Contato</h1>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+    <p id="successMessage" class="success-message"></p>
+  </main>
+
+  <footer>
+    <p>ENZO GABRIEL - RA: 2022102746</p>
+    <p>KAIO SARAVY - RA: 2022102764</p>
+    <p>MATHEUS SALES DE MORAES - RA: 2022103042</p>
+  </footer>
+
+</body>
+</html>
